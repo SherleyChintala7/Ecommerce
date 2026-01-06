@@ -1,0 +1,93 @@
+/* Banner wrapper */
+.banner {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Background image */
+.banner-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url(".../public/sale.jpeg");
+  background-size: cover;
+  background-position: center;
+  transition: filter 0.6s ease;
+}
+
+/* Blur effect */
+.blur {
+  filter: blur(8px);
+}
+
+/* Content overlay */
+.banner-content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Coupon form */
+.coupon-form {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 35px;
+  border-radius: 15px;
+  text-align: center;
+  width: 320px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+  animation: pop 0.4s ease;
+}
+
+.coupon-form h2 {
+  margin-bottom: 10px;
+}
+
+.coupon-form p {
+  font-weight: bold;
+  color: red;
+}
+
+.coupon-form input {
+  width: 100%;
+  padding: 10px;
+  margin: 15px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.coupon-form button {
+  padding: 10px 20px;
+  background: #0d6efd;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Success box */
+.success-box {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  animation: pop 0.4s ease;
+}
+
+.success-box h1 {
+  color: green;
+}
+
+/* Pop animation */
+@keyframes pop {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
