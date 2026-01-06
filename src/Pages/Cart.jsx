@@ -1,6 +1,6 @@
 // import { Counter } from "../REDUX/Counter/Counter"
 import { useDispatch, useSelector } from "react-redux";
-import { Increment,Decrement } from "../Redux/CartSlice";
+import { Increment, Decrement } from "../redux/CartSlice";
 
 export const Cart = () => {
     let cartData = useSelector(state => state.cart)
