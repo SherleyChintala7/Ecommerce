@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import { MainLayout } from './Layout/Mainlayout'
+import MainLayout from './Layout/MainLayout'
 import { Parent } from './context/Parent'
 import Banner from './Pages/Banner'
 
